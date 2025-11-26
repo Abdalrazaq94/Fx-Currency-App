@@ -1,1 +1,1 @@
-# Fx-Currency-App
+# Fx-Currency-Converter
