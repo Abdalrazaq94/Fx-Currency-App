@@ -1,3 +1,10 @@
+
+
+// Name                 Abedulalrazaq Altaih
+// Student ID           S2428152
+// Programme of Study   BSc (Hons) Software Development
+
+
 package com.example.altaih_abedulalrazaq_s2428152;
 
 import android.os.Bundle;
