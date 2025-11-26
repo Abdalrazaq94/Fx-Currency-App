@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- LEFT SIDE: FROM + SWAP + TO -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingEnd="16dp">
+
+        <TextView
+            android:id="@+id/lastUpdateCalculator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last updated:"
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="10dp" />
+
+        <!-- FROM -->
+        <LinearLayout
+            android:id="@+id/fromContainer"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:background="#F5F5F5"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:id="@+id/fromFlag"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/fromCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:layout_marginStart="12dp" />
+        </LinearLayout>
+
+        <!-- SWAP BUTTON -->
+        <ImageView
+            android:id="@+id/buttonSwap"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:src="@drawable/ic_swap"
+            android:background="@android:color/transparent"
+            android:layout_marginBottom="10dp" />
+
+        <!-- TO -->
+        <LinearLayout
+            android:id="@+id/toContainer"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:background="#F5F5F5">
+
+            <ImageView
+                android:id="@+id/toFlag"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/toCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:layout_marginStart="12dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- RIGHT SIDE: INPUT + BUTTON + RESULT -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/amountInput"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Enter amount"
+            android:inputType="numberDecimal"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:background="#EEEEEE" />
+
+        <Button
+            android:id="@+id/buttonConvert"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Convert"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:background="#1976D2"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/resultView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="22sp"
+            android:textColor="#000000"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
